@@ -14,6 +14,6 @@ class Solution {
             }
         }
 
-        return count; // Return the total count of subarrays
+        return count;
     }
 }
