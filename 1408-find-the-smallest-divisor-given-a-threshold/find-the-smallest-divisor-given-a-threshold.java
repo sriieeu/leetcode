@@ -14,9 +14,9 @@ class Solution {
                 sum += (nums[i] + mid - 1) / mid;  
             }
             if (sum <= threshold) {
-                high = mid;      // try smaller divisor
+                high = mid;      
             } else {
-                low = mid + 1;   // need bigger divisor
+                low = mid + 1;   
             }
         }
 
