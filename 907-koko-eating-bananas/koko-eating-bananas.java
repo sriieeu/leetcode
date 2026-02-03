@@ -9,17 +9,17 @@ class Solution {
         }
         while (low < high) {
 
-            int k = low + (high - low) / 2;
+            int mid = low + (high - low) / 2;
             int hours = 0;
 
             for (int i = 0; i < piles.length; i++) {
-                hours += (int) Math.ceil((double) piles[i] / k);
+                hours += (int) Math.ceil((double) piles[i] / mid);
             }
 
             if (hours <= h) {
-                high = k;
+                high = mid;
             } else {
-                low = k + 1; 
+                low = mid + 1; 
             }
         }
 
