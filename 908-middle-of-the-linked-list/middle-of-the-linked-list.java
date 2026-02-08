@@ -16,7 +16,7 @@ class Solution {
             one = one.next;
             two = two.next.next;
         }
-        
+       
         return one ;
     }
 }
